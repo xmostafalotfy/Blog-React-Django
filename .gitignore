@@ -46,3 +46,45 @@ Thumbs.db
 
 vite.config.*.timestamp*
 vitest.config.*.timestamp*
+
+# Django specific ignores
+/apps/backend/__pycache__/
+/apps/backend/*/__pycache__/
+/apps/backend/*/*/__pycache__/
+**/__pycache__/
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Database
+/apps/backend/db.sqlite3
+/apps/backend/*.sqlite
+
+# Environment files
+/apps/backend/.env
+/apps/backend/.env.local
+/apps/backend/.env.*.local
+
+# Static files
+/apps/backend/static/
+/apps/backend/media/
+
+# Logs and development files
+/apps/backend/*.log
+/apps/backend/*.pot
+/apps/backend/*.pyc
+/apps/backend/*.pyo
+
+# Coverage reports
+/apps/backend/.coverage
+/apps/backend/htmlcov/
+
+# IDE specific files
+/apps/backend/.vscode/
+/apps/backend/.idea/
+
+# Migration files
+/apps/backend/*/migrations/*.py
+!/apps/backend/*/migrations/__init__.py
